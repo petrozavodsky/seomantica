@@ -23,7 +23,7 @@ header {
   width: 100%;
   display: block;
   margin: auto;
-  background: @base_green;
+  background: @base_yellow;
   nav {
     width: 490px;
     float: left;
@@ -84,6 +84,8 @@ header {
   float: right;
   width: 198px;
   height: 100%;
+  padding-top: 12px;
+  box-sizing: border-box;
   .phone {
     font-family: 'pantonblack_caps';
     font-size: 23px;
@@ -122,10 +124,9 @@ section {
 }
 
 body.front {
-
   section.screen-1 {
     height: 590px;
-    background: @base_green;
+    background: @base_yellow;
     .section-title {
       display: inline-block;
       color: #fff;
@@ -265,7 +266,7 @@ body.front {
           font-size: 0;
           height: 5px;
           width: 5px;
-          &.selected{
+          &.selected {
             background: #aaa;
           }
         }
@@ -273,16 +274,16 @@ body.front {
 
     }
 
-    
-    .decoratin__bottom{
+    .decoratin__bottom {
       background: url("../images/css/bottom-border.png");
       width: 100%;
       height: 13px;
       position: absolute;
       bottom: -13px;
       display: block;
+      z-index: 10;
     }
-    
+
   }
 
 }
