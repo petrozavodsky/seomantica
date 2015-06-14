@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Semantica</title>
     <!-- build:css css/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css"/>
 
     <!--build:css css/main.css-->
     <link rel="stylesheet" href="css/main.css"/>
@@ -26,15 +28,15 @@
 
         <nav>
 
-            <ul>
-                <li>
+            <ul class="menu__items">
+                <li class="menu__item menu__item-1">
                     <a href="#">О компании</a>
                 </li>
-                <li>
+                <li class="menu__item menu__item-2 has-child">
                     <a href="#">
                         Услуги
                     </a>
-                    <ul>
+                    <ul class="menu__items menu__items-child" >
                         <li>
                             <a href="#">Продвижение</a>
                         </li>
@@ -43,13 +45,13 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li  class="menu__item menu__item-3">
                     <a href="#">Портфолио</a>
                 </li>
-                <li>
+                <li class="menu__item menu__item-4">
                     <a href="#">блог</a>
                 </li>
-                <li>
+                <li  class="menu__item menu__item-5">
                     <a href="#">Контакты</a>
                 </li>
             </ul>
@@ -72,7 +74,7 @@
             а средство продвижения.
         </span>
 
-        <a href="#" class="send-action__link">
+        <a href="#request" data-fancybox-href="form.html" class="send-action__link">
             Отправить заявку
         </a>
 
@@ -171,34 +173,40 @@
 
 <section class="screen-3">
     <div class="base__wrap">
-        <span class="section-title bold">Наш подход</span>
 
         <div class="block__ruby-img">
             <img src="images/front/ruby.png" alt=""/>
         </div>
         <div class="block_text">
+            <span class="section-title bold">Наш подход</span>
 
-            <div class="booble__text">
-                <span>*</span> Семантика — это смысл, информационное
-                содержание языка или его отдельной единицы.
+            <div class="booble__text-wrap">
+                <div class="booble__text">
+                    <span>*</span> Семантика — это смысл, информационное
+                    содержание языка или его отдельной единицы.
 
+                </div>
             </div>
 
 
-            <p>
-                Seomantica — то же самое, только в контексте интернет-
-                маркетинга: информационное содержание вашего сайта
-                или его отдельной страницы, доходчивый SEO-язык и смысл нашего результативного сотрудничества.
-            </p>
+            <div class="block_text-content">
+                <p>
+                    Seomantica — то же самое, только в контексте интернет-
+                    маркетинга: информационное содержание вашего сайта
+                    или его отдельной страницы, доходчивый SEO-язык и смысл нашего результативного сотрудничества.
+                </p>
 
-            <p>
-                Мы не берем пример с более крупных агентств и прене-
-                брегаем режимом конвейера. У нас нет цейтнота и сорванных
-                сроков. Нам всё еще не надоело каждый раз подходить
-                к клиенту «как в первый раз»: с чувством, с толком,
-                с расстановкой приоритетов.
-            </p>
-            <span class="section-title min">Потому мы вам и подходим,ничего удивительного!</span>
+                <p>
+                    Мы не берем пример с более крупных агентств и прене-
+                    брегаем режимом конвейера. У нас нет цейтнота и сорванных
+                    сроков. Нам всё еще не надоело каждый раз подходить
+                    к клиенту «как в первый раз»: с чувством, с толком,
+                    с расстановкой приоритетов.
+                </p>
+            </div>
+
+            <span class="section-title min bold">Потому мы вам и подходим,</span>
+            <span class="section-title min bold">ничего удивительного!</span>
         </div>
     </div>
 
@@ -206,13 +214,141 @@
 
 
 <section class="screen-4">
-    <span class="section-title bold">
-        Мы  глазами  клиентов
-    </span>
+    <div class="base__wrap">
+        <span class="section-title bold">
+            Мы  глазами  клиентов
+        </span>
+
+        <div class="clients__slider">
+            <div class="clients__items">
+                <div class="clients__item">
+
+                    <div class="clients__img-wrap">
+                        <div class="clients__img"></div>
+                        <img src="images/front/clients/1.png" alt=""/>
+                    </div>
+                    <div class="clients__text">
+                        Seomantica — крутые ребята. Нам понравилось
+                        с ними работать.
+                    </div>
+
+                    <div class="clients__separator">
+                        •
+                    </div>
+
+                    <div class="clients__name">банк
+                        первомайский
+                    </div>
+
+                </div>
+                <div class="clients__item">
+                    <div class="clients__img-wrap">
+                        <div class="clients__img"></div>
+                        <img src="images/front/clients/2.png" alt=""/>
+                    </div>
+                    <div class="clients__text">
+                        Seomantica — крутые ребята. Нам понравилось
+                        с ними работать.
+                    </div>
+
+                    <div class="clients__separator">
+                        •
+                    </div>
+
+                    <div class="clients__name">ключавто</div>
+                </div>
+                <div class="clients__item">
+                    <div class="clients__img-wrap">
+                        <div class="clients__img"></div>
+                        <img src="images/front/clients/3.png" alt=""/>
+                    </div>
+                    <div class="clients__text">
+                        Seomantica — крутые ребята. Нам понравилось
+                        с ними работать.
+                    </div>
+
+                    <div class="clients__separator">
+                        •
+                    </div>
+
+                    <div class="clients__name">ключавто</div>
+                </div>
+                <div class="clients__item">
+                    <div class="clients__img-wrap">
+                        <div class="clients__img"></div>
+                        <img src="images/front/clients/4.png" alt=""/>
+                    </div>
+                    <div class="clients__text">
+                        Seomantica — крутые ребята. Нам понравилось
+                        с ними работать.
+                    </div>
+
+                    <div class="clients__separator">
+                        •
+                    </div>
+
+                    <div class="clients__name">ключавто</div>
+                </div>
+                <div class="clients__item">
+                    <div class="clients__img-wrap">
+                        <div class="clients__img"></div>
+                        <img src="images/front/clients/5.png" alt=""/>
+                    </div>
+                    <div class="clients__text">
+                        Seomantica — крутые ребята. Нам понравилось
+                        с ними работать.
+                    </div>
+
+                    <div class="clients__separator">
+                        •
+                    </div>
+
+                    <div class="clients__name">ключавто</div>
+                </div>
+                <div class="clients__item">
+                    <div class="clients__img-wrap">
+                        <div class="clients__img"></div>
+                        <img src="images/front/clients/6.png" alt=""/>
+                    </div>
+                    <div class="clients__text">
+                        Seomantica — крутые ребята. Нам понравилось
+                        с ними работать.
+                    </div>
+
+                    <div class="clients__separator">
+
+                    </div>
+
+                    <div class="clients__name">ключавто</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section class="screen-5">
+    <div class="base__wrap">
+        <div class="block__goal-img">
+            <img src="images/front/screen-4.png" alt=""/>
+        </div>
 
+        <span class="section-title min bold">
+            Хотите   внимательного   отношения
+        </span>
+
+        <span class="section-title min bold">
+            к проекту   и   впечатляющих    результатов?
+        </span>
+
+        <span class="section-title">
+            Всё будет!
+        </span>
+
+        <a href="#request" data-fancybox-href="form.html" class="send-action__link">
+            Отправить заявку
+        </a>
+    </div>
 </section>
 
 <footer>
@@ -234,6 +370,7 @@
 
 </footer>
 
+
 <!--build:js scripts/vendor.js-->
 <!-- bower:js -->
 <script src="bower_components/jquery/jquery.js"></script>
@@ -241,9 +378,10 @@
 <!-- endbower -->
 <!--endbuild-->
 
+<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+
 <!--build:js scripts/main.js-->
 <script src="js/main.js"></script>
-<script src="js/plugins.js"></script>
 <!--endbuild-->
 </body>
 </html>
