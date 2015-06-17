@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('.clients__items').carouFredSel({
         prev: '.clients__slider .clients__slider-arrow-left',
         next: '.clients__slider .clients__slider-arrow-right',
-        width: 900,
+        width: '100%',
         items: 4,
         scroll:{
             items:1,
