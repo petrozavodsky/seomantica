@@ -8,6 +8,7 @@
 @base_yellow_shadow: #dfaf07;
 @base_gray: #f7f5f5;
 @base_pink: #ec7872;
+
 body {
   font-family: 'helveticaneuecyrroman', 'Helvetica Neue', Helvetica, Arial;
 }
@@ -444,6 +445,7 @@ html {
   .form__elements {
     margin: auto;
     input {
+      color: #fff;
       background: @base_yellow_shadow;
       width: 99%;
       height: 48px;
@@ -454,6 +456,9 @@ html {
       margin-top: 16px;
       box-sizing: border-box;
       padding: 0 0 0 20px;
+      &:focus{
+        border: 1px solid #fff;
+      }
     }
   }
 
@@ -846,6 +851,73 @@ html {
         color: inherit;
         line-height: 80%;
       }
+    }
+  }
+
+}
+
+.block__page-form {
+  background: url("../images/about/form-bg.png");
+  width: 501px;
+  height: 419px;
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  padding-top: 48px;
+
+  .form__title {
+    font-family: 'pantonlight_caps';
+    font-size: 23px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .form__elements {
+    margin: auto;
+    width: 300px;
+    display: block;
+    height: 419px;
+    margin-top: 20px;
+    input {
+      background: @base_yellow_shadow;
+      width: 99%;
+      height: 48px;
+      float: left;
+      border: none;
+      border-radius: 48px;
+      margin-bottom: 20px;
+      margin-top: 16px;
+      box-sizing: border-box;
+      padding: 0 0 0 20px;
+      color: #fff;
+      &:focus {
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  .form__elements-submit {
+    width: 100%;
+    float: left;
+    display: block;
+  }
+
+  button {
+    width: 280px;
+    height: 80px;
+    border-radius: 80px;
+    display: block;
+    margin: auto;
+    border: none;
+    background: @base_green;
+    color: #fff;
+    font-family: 'pantonblack_caps';
+    font-size: 23px;
+    &:hover {
+      background: #fff;
+      color: @base_green;
     }
   }
 
@@ -1337,6 +1409,14 @@ body.about {
 
     }
 
+    .block__page-form {
+      margin: -31px auto auto;
+    }
+
+    .block__page-form button {
+      margin-top: 20px;
+    }
+
   }
 
 }
@@ -1725,9 +1805,40 @@ body.dev {
 body.contacts {
 
   section.screen-1 {
-    height: 590px;
     background: @base_yellow;
+    height: 240px;
+    .block__contacts-panel {
+      padding-top: 50px;
+      width: 100%;
+      height: 150px;
+      float: left;
+
+      .item {
+        width: 316px;
+        height: 100%;
+        float: left;
+      }
+
+      strong {
+        color: #fff;
+        font-family: 'pantonblack_caps';
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: #fff;
+        font-family: 'pantonlight_caps';
+        font-size: 18px;
+      }
+    }
+  }
+  section.screen-2 {
+    min-height: 590px;
+    height: 590px;
+    background: #fff;
     position: relative;
+    float: left;
     #map {
       position: absolute;
       left: 0;
@@ -1739,3 +1850,4 @@ body.contacts {
 
   }
 }
+
