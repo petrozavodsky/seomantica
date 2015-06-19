@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantica</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css"/>
+
+    <!--build:css css/main.css-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- endbuild -->
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body class="contacts">
+
+<header>
+
+    <div class="base__wrap">
+
+        <a href="index.html" class="logo">
+            <div class="circle"></div>
+            <img src="images/logo.png" alt=""/>
+        </a>
+
+        <nav>
+
+            <ul class="menu__items">
+                <li class="menu__item menu__item-1">
+                    <a href="about.html">О компании</a>
+                </li>
+                <li class="menu__item menu__item-2 has-child">
+                    <a href="#">
+                        Услуги
+                    </a>
+                    <ul class="menu__items menu__items-child" >
+                        <li>
+                            <a href="seo.html">Продвижение</a>
+                        </li>
+                        <li>
+                            <a href="dev.html">Разработка сайтов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li  class="menu__item menu__item-3">
+                    <a href="#">Портфолио</a>
+                </li>
+                <li class="menu__item menu__item-4">
+                    <a href="#">Блог</a>
+                </li>
+                <li  class="menu__item menu__item-5">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__panel">
+            <a href="tel:89180303134" class="phone">8 918 030 31 34</a>
+            <a href="#" class="feeed-back-link">Заказать звонок</a>
+        </div>
+    </div>
+
+</header>
+
+
+<section class="screen-1">
+<div id="map" data-img="images/сontacts/icon.png">
+
+</div>
+</section>
+
+
+
+<footer>
+
+    <div class="base__wrap">
+        <span class="footer__copy">
+            © 2015 Seomantica.ru
+        </span>
+
+        <address class="footer__address">
+            <span class="footer__address-line footer__address-line-1">
+                <strong>Адрес:</strong> Краснодар, ул. Старокубанская, 116а, офис 7
+            </span>
+            <span class="footer__address-line footer__address-line-2">
+                <strong>Телефон:</strong> <a href="tel:+79180303134">+7 (918) 030-31-34</a>
+            </span>
+        </address>
+    </div>
+
+</footer>
+
+
+<!--build:js scripts/vendor.js-->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/caroufredsel/jquery.carouFredSel-6.2.1.js"></script>
+<!-- endbower -->
+<!--endbuild-->
+
+<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!--build:js scripts/main.js-->
+<script src="js/main.js"></script>
+<!--endbuild-->
+</body>
+</html>
